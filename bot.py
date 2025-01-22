@@ -4,10 +4,10 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 import openai
 
 # OpenAI API-Key (DALL-E)
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("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")
 
 # Telegram-Bot-Token
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_BOT_TOKEN = os.getenv("7956117643:AAHsc3b1LCj3tL_qXQRk2vHR2SqIUZi0ivo")
 
 # Setze OpenAI API-Key
 openai.api_key = OPENAI_API_KEY
@@ -47,7 +47,7 @@ def handle_message(update: Update, context: CallbackContext):
 # Main-Funktion
 def main():
     # Telegram-Bot initialisieren
-    updater = Updater(TELEGRAM_BOT_TOKEN)
+    updater = Updater(7956117643:AAHsc3b1LCj3tL_qXQRk2vHR2SqIUZi0ivo)
     dispatcher = updater.dispatcher
 
     # Befehle und Nachrichtenhandler
