@@ -1,15 +1,15 @@
 import os
-import logging
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler, CallbackContext
 from dotenv import load_dotenv
-import openai
 
-# Lade Umgebungsvariablen
+# Lade die .env-Datei
 load_dotenv()
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
+# Greife auf die Umgebungsvariablen zu
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-openai.api_key = OPENAI_API_KEY
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
+print("OpenAI API Key:", OPENAI_API_KEY)  # Optional, nur zum Testen
+print("Telegram Token:", TELEGRAM_TOKEN)  # Optional, nur zum Testen
 
 # Logging einrichten
 logging.basicConfig(
