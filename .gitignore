@@ -1,5 +1,4 @@
 # Ignoriere die .env-Datei
 .env
-
 OPENAI_API_KEY=dein_openai_api_schlüssel
 TELEGRAM_TOKEN=dein_telegram_token
